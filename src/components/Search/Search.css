@@ -1,0 +1,14 @@
+.Search {
+  min-width: 300px;
+  min-height: 25px;
+  font-size: 18px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.Search-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
