@@ -1,4 +1,6 @@
+// @flow
 import * as actionTypes from '../constants/actionTypes'
+import type { State, Action } from '../types/types'
 
 const initialState = {
   repos: [],
@@ -6,7 +8,7 @@ const initialState = {
   error: '',
 }
 
-const repos = (state = initialState, action) => {
+const repos = (state: State = initialState, action: Action) => {
   switch (action.type) {
     case actionTypes.SEARCH_REQUEST_SENT:
       return { ...state, isLoading: true, error: '' }

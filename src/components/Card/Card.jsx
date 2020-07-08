@@ -1,8 +1,16 @@
+// @flow
 import React from 'react'
 
 import './Card.css'
 
-const Card = (props) => {
+type Props = {
+  repoName: string,
+  repoAuthor: string,
+  repoStarsAmount: string,
+  repoUrl: string,
+}
+
+const Card = (props: Props) => {
   const { repoName, repoAuthor, repoStarsAmount, repoUrl } = props
 
   return (

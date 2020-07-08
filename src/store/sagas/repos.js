@@ -3,12 +3,12 @@ import axios from 'axios'
 
 import * as actions from '../actions/repos'
 
-export function* searchReposSaga(action) {
+export default function* searchReposSaga(action) {
   yield delay(300)
   yield put(actions.searchRequestSent())
   try {
     const response = yield axios.get(
-      `https://api.github.com/search/repositories?q=${action.searchParam}`
+      `https://api.github.com/search/repositories?=${action.searchParam}`
     )
     const repos = response.data.items.map((repo) => ({
       repoId: repo.id,
