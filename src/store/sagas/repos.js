@@ -8,7 +8,7 @@ export default function* searchReposSaga(action) {
   yield put(actions.searchRequestSent())
   try {
     const response = yield axios.get(
-      `https://api.github.com/search/repositories?=${action.searchParam}`
+      `https://api.github.com/search/repositories?q=${action.searchParam}`
     )
     const repos = response.data.items.map((repo) => ({
       repoId: repo.id,
