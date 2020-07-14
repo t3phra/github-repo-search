@@ -1,15 +1,17 @@
-## Запуск
+## Quick start
 
-Установите нужные пакеты:
+Install the dependencies in the local node_modules folder:
 
 ### `npm install`
 
-И запустите проект локально:
+And run app in the development mode:
 
 ### `npm start`
 
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Список зависимостей
+
+## Dependencies
 
 ```
 "dependencies": {
